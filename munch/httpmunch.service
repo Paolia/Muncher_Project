@@ -1,0 +1,10 @@
+[Unit]
+Description = HTTP RC Muncher Rover
+
+[Service]
+ExecStart = python3 /home/paolia/munch/httpmunch.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

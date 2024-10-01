@@ -1,0 +1,11 @@
+NOTE:Not yet written or enabled.
+[Unit]
+Desctiption = GPS IMU Data Collection
+
+[Service]
+ExecStart = python3 /home/paolia/munch/gps_imu.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
